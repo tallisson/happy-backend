@@ -7,12 +7,16 @@
     "dev": "ts-node-dev --transpile-only --ignore-watch node_modules src/server.ts",
     "build": "tsc",
     "prod:exe": "node src/server.js",
-    "start": "npm run build; npm run prod:exe"
+    "start": "npm run build; npm run prod:exe",
+    "typeorm": "ts-node-dev ./node_modules/typeorm/cli.js"
   },
   "dependencies": {
+    "@types/node": "^14.11.8",
     "concurrently": "^5.3.0",
     "express": "^4.17.1",
-    "ts-node": "^9.0.0"
+    "sqlite3": "^5.0.0",
+    "ts-node": "^9.0.0",
+    "typeorm": "^0.2.28"
   },
   "devDependencies": {
     "@types/express": "^4.17.8",
